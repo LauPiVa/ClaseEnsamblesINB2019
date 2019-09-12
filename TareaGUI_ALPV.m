@@ -1,35 +1,35 @@
-function varargout = pruebasTareaAL(varargin)
-% PRUEBASTAREAAL MATLAB code for pruebasTareaAL.fig
-%      PRUEBASTAREAAL, by itself, creates a new PRUEBASTAREAAL or raises the existing
+function varargout = TareaGUI_ALPV(varargin)
+% TAREAGUI_ALPV MATLAB code for TareaGUI_ALPV.fig
+%      TAREAGUI_ALPV, by itself, creates a new TAREAGUI_ALPV or raises the existing
 %      singleton*.
 %
-%      H = PRUEBASTAREAAL returns the handle to a new PRUEBASTAREAAL or the handle to
+%      H = TAREAGUI_ALPV returns the handle to a new TAREAGUI_ALPV or the handle to
 %      the existing singleton*.
 %
-%      PRUEBASTAREAAL('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in PRUEBASTAREAAL.M with the given input arguments.
+%      TAREAGUI_ALPV('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in TAREAGUI_ALPV.M with the given input arguments.
 %
-%      PRUEBASTAREAAL('Property','Value',...) creates a new PRUEBASTAREAAL or raises the
+%      TAREAGUI_ALPV('Property','Value',...) creates a new TAREAGUI_ALPV or raises the
 %      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before pruebasTareaAL_OpeningFcn gets called.  An
+%      applied to the GUI before TareaGUI_ALPV_OpeningFcn gets called.  An
 %      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to pruebasTareaAL_OpeningFcn via varargin.
+%      stop.  All inputs are passed to TareaGUI_ALPV_OpeningFcn via varargin.
 %
 %      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
 %      instance to run (singleton)".
 %
 % See also: GUIDE, GUIDATA, GUIHANDLES
 
-% Edit the above text to modify the response to help pruebasTareaAL
+% Edit the above text to modify the response to help TareaGUI_ALPV
 
-% Last Modified by GUIDE v2.5 11-Sep-2019 22:05:23
+% Last Modified by GUIDE v2.5 11-Sep-2019 22:23:21
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
-                   'gui_OpeningFcn', @pruebasTareaAL_OpeningFcn, ...
-                   'gui_OutputFcn',  @pruebasTareaAL_OutputFcn, ...
+                   'gui_OpeningFcn', @TareaGUI_ALPV_OpeningFcn, ...
+                   'gui_OutputFcn',  @TareaGUI_ALPV_OutputFcn, ...
                    'gui_LayoutFcn',  [] , ...
                    'gui_Callback',   []);
 if nargin && ischar(varargin{1})
@@ -44,15 +44,15 @@ end
 % End initialization code - DO NOT EDIT
 
 
-% --- Executes just before pruebasTareaAL is made visible.
-function pruebasTareaAL_OpeningFcn(hObject, eventdata, handles, varargin)
+% --- Executes just before TareaGUI_ALPV is made visible.
+function TareaGUI_ALPV_OpeningFcn(hObject, eventdata, handles, varargin)
 % This function has no output args, see OutputFcn.
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-% varargin   command line arguments to pruebasTareaAL (see VARARGIN)
+% varargin   command line arguments to TareaGUI_ALPV (see VARARGIN)
 
-% Choose default command line output for pruebasTareaAL
+% Choose default command line output for TareaGUI_ALPV
 handles.output = hObject;
 
 %data = struct('val',0,'diffMax',1);
@@ -69,12 +69,12 @@ subplot(211)
 imagesc(data.datos.Spikes)
 xlabel('Cells'), ylabel('Vectors(t)')
 
-% UIWAIT makes pruebasTareaAL wait for user response (see UIRESUME)
+% UIWAIT makes TareaGUI_ALPV wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 
 
 % --- Outputs from this function are returned to the command line.
-function varargout = pruebasTareaAL_OutputFcn(hObject, eventdata, handles) 
+function varargout = TareaGUI_ALPV_OutputFcn(hObject, eventdata, handles) 
 % varargout  cell array for returning output args (see VARARGOUT);
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
